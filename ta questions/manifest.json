@@ -141,6 +141,40 @@
         "repository_search_result": "No exact repository match found using key terms and values: turn-on snubber, Ls, 187 V, 5 A, 1 µs, drain current rise time.",
         "notes": "Similar snubber archive entries concern turn-off snubber resistor sizing, not this turn-on inductor sizing question."
       }
+    },
+    {
+      "id": "buck-boost-ccm-inductor-ripple-vdc35-vo27-f50khz-l344uh",
+      "question_title": "Buck-boost converter CCM peak-to-peak inductor current ripple",
+      "category": "buck-boost-converter",
+      "subcategory": "ccm-inductor-current-ripple",
+      "key_topic": "Peak-to-peak inductor current ripple in inverting buck-boost converter operating in CCM",
+      "path": "ta questions/buck-boost-converter/inductor-current-ripple-ccm-vdc-35-vo-27-l-344uh",
+      "description_file": "ta questions/buck-boost-converter/inductor-current-ripple-ccm-vdc-35-vo-27-l-344uh/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps images in a separate Word document and uses caption in description.md.",
+      "caption": "Buck-boost converter CCM inductor-ripple question: Vdc = 35 V, |Vo| = 27 V, fpwm = 50 kHz, L = 344 µH, and C = 47 µF; using the CCM buck-boost duty ratio and Mode 1 inductor ramp gives a peak-to-peak inductor current ripple of ΔIL = 0.89 A.",
+      "original_image_filename": "image.png",
+      "visible_values": {
+        "Vdc_V": 35,
+        "Vo_V": 27,
+        "fpwm_kHz": 50,
+        "L_uH": 344,
+        "C_uF": 47
+      },
+      "asked_for": "Peak-to-peak inductor current ripple ΔIL in amperes",
+      "correct_answer": "0.89 A",
+      "method_summary": "Use buck-boost CCM relation d = |Vo|/(Vdc + |Vo|) = 27/(35+27) = 0.4355. During Mode 1, vL = Vdc, so ΔIL = Vdc × d/(L × fpwm) = 35 × 0.4355/(344e−6 × 50e3) = 0.89 A.",
+      "formula_source": [
+        "Formula sheet: vL = L diL/dt",
+        "Circuit reasoning / volt-second balance: |Vo| = Vdc d/(1−d) for CCM buck-boost magnitude form"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new_similar_not_duplicate",
+        "manifest_result": "Similar buck-boost CCM inductor-ripple entry exists for Vdc = 42 V, Vo = 14 V, fpwm = 50 kHz, L = 462 µH, answer 0.45 A; values and answer differ, so this is not exact duplicate.",
+        "repository_search_result": "No exact repository match found using key terms and values: buck-boost ripple, 35 V, 27 V, 344 µH, 50 kHz.",
+        "notes": "Archived as a new question without GitHub image storage."
+      }
     }
   ]
 }
