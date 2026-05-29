@@ -211,6 +211,39 @@
         "repository_search_result": "No exact repository match found for C2 = 0.5 V, R12 = 3 kΩ, R13 = 3 kΩ, βVref = 2.5 V and vsaw = 5 V.",
         "notes": "Archived as a new question without GitHub image storage."
       }
+    },
+    {
+      "id": "buck-closed-loop-beta-bias-current-r12-1ma-r13-3k-vref-7p79",
+      "question_title": "Closed-loop buck converter beta from feedback bias current",
+      "category": "buck converters",
+      "subcategory": "case studies / feedback-control / reference-scaling factor",
+      "key_topic": "Finding beta from feedback-divider bias current and reference voltage",
+      "path": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-beta-bias-current-r12-1ma-r13-3k-vref-7p79",
+      "description_file": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-beta-bias-current-r12-1ma-r13-3k-vref-7p79/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps images in a separate Word document and uses caption in description.md.",
+      "caption": "Closed-loop buck converter feedback-divider question: with bias current through R12 of 1 mA, R13 = 3 kΩ, and Vref = 7.79 V, the feedback node voltage is 3.00 V, so the required reference scaling factor is β = 0.39.",
+      "original_image_filename": "image.png",
+      "visible_values": {
+        "IBIAS_mA": 1,
+        "R13_kOhm": 3,
+        "Vref_V": 7.79
+      },
+      "asked_for": "Reference scaling factor beta",
+      "correct_answer": "0.39",
+      "method_summary": "Use steady-state op-amp equality αVo = βVref. The feedback node voltage is αVo = IBIAS × R13 = 1 mA × 3 kΩ = 3.00 V. Therefore β = 3.00/7.79 = 0.39.",
+      "formula_source": [
+        "Circuit reasoning: steady-state closed-loop condition αVo = βVref",
+        "Ohm's law: feedback node voltage across R13 equals IBIAS × R13",
+        "Derived equation: β = IBIAS R13 / Vref"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new_not_duplicate_logic",
+        "manifest_result": "Existing closed-loop buck feedback questions use the same circuit family but ask for Vdc from C2/PWM or voltage across C9; this asks for β from divider bias current and Vref.",
+        "repository_search_result": "No exact repository match found for β, IBIAS = 1 mA, R13 = 3 kΩ, and Vref = 7.79 V.",
+        "notes": "Not treated as duplicate logic because the requested element and solving tools differ from the existing closed-loop buck entries."
+      }
     }
   ]
 }
