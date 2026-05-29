@@ -63,8 +63,12 @@ image.png
 
 ## Image metadata
 - Stored image path: `ta questions/buck-boost-converter/inductor-current-ripple-ccm-vdc-42-vo-14-l-462uh/question.png`
-- SHA-256: `1bf97b24540470b5b13cc2e886def27632337a7911f6f545bce55c37d8386319`
+- SHA-256: `31a1cad864366886c4d8ebd8c39b96f4a161edb23667332d8fa7f5ddda58e0d9`
 - Size: 484 × 203 px
+- Processing: converted to 1-bit black/white PNG with a solid white background for reliable GitHub and Windows preview.
 
 ## Duplicate-check result
 New question. No duplicate was found in the existing manifest, and repository text search found no matching stored question/values before archiving.
+
+## Repair note
+2026-05-29: replaced the original PNG with a flattened black/white PNG because the previous file previewed as blank after raw download on Windows.

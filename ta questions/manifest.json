@@ -14,7 +14,7 @@
       "image_file": "ta questions/buck-boost-converter/inductor-current-ripple-ccm-vdc-42-vo-14-l-462uh/question.png",
       "description_file": "ta questions/buck-boost-converter/inductor-current-ripple-ccm-vdc-42-vo-14-l-462uh/description.md",
       "original_image_filename": "image.png",
-      "image_sha256": "1bf97b24540470b5b13cc2e886def27632337a7911f6f545bce55c37d8386319",
+      "image_sha256": "31a1cad864366886c4d8ebd8c39b96f4a161edb23667332d8fa7f5ddda58e0d9",
       "question_text_hash_sha256": "53d9a3340be63643e37847bd17e033344d6c45f4e4a1c5942941ea63f648e82c",
       "visible_values": {
         "Vdc_V": 42,
@@ -33,11 +33,12 @@
         "Volt-second balance: Vdc ton = |Vo| toff"
       ],
       "date_archived": "2026-05-29",
+      "image_processing": "Converted to 1-bit black/white PNG with solid white background for reliable GitHub and Windows preview.",
       "duplicate_check": {
         "status": "new",
         "manifest_result": "Existing manifest contained no entries before this image.",
         "repository_search_result": "No matching repository search result for the values/text.",
-        "notes": "Archived as a new question."
+        "notes": "Archived as a new question. Image was later repaired/replaced with a flattened PNG."
       }
     }
   ]
