@@ -107,6 +107,40 @@
         "repository_search_result": "No exact repository match for C9, Vdc = 24 V, R2 = 2 kΩ, R3 = 1 kΩ.",
         "notes": "Archived as a new question without GitHub image storage."
       }
+    },
+    {
+      "id": "snubbers-turn-on-ls-vdc187-fpwm5khz-il5-trise1us",
+      "question_title": "Turn-on snubber inductor from MOSFET drain-current rise time",
+      "category": "snubbers",
+      "subcategory": "turn-on-snubber / inductor-sizing",
+      "key_topic": "Using snubber inductance to control MOSFET drain-current slew rate at turn-on",
+      "path": "ta questions/snubbers/turn-on-snubber-inductor-vdc-187-fpwm-5khz-il-5a-trise-1us",
+      "description_file": "ta questions/snubbers/turn-on-snubber-inductor-vdc-187-fpwm-5khz-il-5a-trise-1us/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps images in a separate Word document and uses caption in description.md.",
+      "caption": "Turn-on snubber sizing question: MOSFET switch with inductive load, Vdc = 187 V, fpwm = 5 kHz, duty d = 30 %, and load current IL = 5 A; the series snubber inductor Ls is chosen so the MOSFET drain current rises to IL in 1 µs, giving Ls = 37.40 µH.",
+      "original_image_filename": "image.png",
+      "visible_values": {
+        "Vdc_V": 187,
+        "fpwm_kHz": 5,
+        "d_percent": 30,
+        "IL_A": 5,
+        "trise_us": 1
+      },
+      "asked_for": "Turn-on snubber inductance Ls in microhenries",
+      "correct_answer": "37.40 µH",
+      "method_summary": "Use vL = L di/dt. During the turn-on transient, Ls is treated as having approximately Vdc across it while MOSFET drain current rises from 0 A to IL, so Ls = Vdc × tr / IL = 187 × 1e-6 / 5 = 37.40 µH.",
+      "formula_source": [
+        "Formula sheet: vL = L diL/dt",
+        "Circuit reasoning: snubber inductor controls drain-current slew during MOSFET turn-on"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new",
+        "manifest_result": "No existing manifest entry for a turn-on snubber inductor question with Vdc = 187 V, IL = 5 A, and rise time = 1 µs.",
+        "repository_search_result": "No exact repository match found using key terms and values: turn-on snubber, Ls, 187 V, 5 A, 1 µs, drain current rise time.",
+        "notes": "Similar snubber archive entries concern turn-off snubber resistor sizing, not this turn-on inductor sizing question."
+      }
     }
   ]
 }
