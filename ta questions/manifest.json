@@ -47,8 +47,8 @@
       "category": "buck converters",
       "subcategory": "case studies / feedback-control",
       "key_topic": "Closed-loop buck converter steady-state control calculation",
-      "path": "ta questions/buck converters/case studies/closed-loop-buck-feedback-vdc-c2-0p5v",
-      "description_file": "ta questions/buck converters/case studies/closed-loop-buck-feedback-vdc-c2-0p5v/description.md",
+      "path": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-vdc-c2-0p5v",
+      "description_file": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-vdc-c2-0p5v/description.md",
       "image_file": null,
       "image_storage": "Image not stored in GitHub. User keeps image in separate Word document and uses caption in description.md.",
       "caption": "Closed-loop buck converter feedback-control case study: the circuit uses a PWM sawtooth comparator, compensator output, and feedback divider to determine the required input voltage Vdc when vC2 = 0.5 V, R12 = 4 kΩ, R13 = 3 kΩ, βVref = 2.5 V, and vsaw = 5 V.",
@@ -69,6 +69,42 @@
         "Circuit reasoning: feedback divider α = R13/(R12+R13)",
         "Closed-loop condition: αVo = βVref",
         "PWM comparator relation: δ = u/vsaw"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new",
+        "manifest_result": "No matching existing manifest entry.",
+        "repository_search_result": "No matching repository search result for the values/text.",
+        "notes": "Archived as a new question without GitHub image storage."
+      }
+    },
+    {
+      "id": "snubbers-turn-off-rs-vdc200-fpwm6khz-cs58nf-duty10",
+      "question_title": "Turn-off snubber resistor from minimum duty cycle",
+      "category": "snubbers",
+      "subcategory": "turn-off-snubber / resistor-sizing",
+      "key_topic": "Sizing Rs so Cs discharges during MOSFET on-time",
+      "path": "ta questions/snubbers/turn-off-snubber-resistor-vdc-200-fpwm-6khz-cs-58nf",
+      "description_file": "ta questions/snubbers/turn-off-snubber-resistor-vdc-200-fpwm-6khz-cs-58nf/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps image in separate Word document and uses caption in description.md.",
+      "caption": "Turn-off snubber sizing case study for a MOSFET chopper with inductive-load current source: the circuit uses a snubber capacitor Cs, snubber diode Ds, and discharge resistor Rs to limit the MOSFET drain-source voltage rise at turn-off; here Vdc = 200 V, fpwm = 6 kHz, Cs = 58 nF, and the worst-case minimum duty cycle is 10%.",
+      "original_image_filename": "image.png",
+      "question_text_hash_sha256": "48baba21d968e47c3c4c9f6015a6a1e9ef9263743ed72aa99aaa13bef3f75ec1",
+      "visible_values": {
+        "Vdc_V": 200,
+        "fpwm_kHz": 6,
+        "Cs_nF": 58,
+        "minimum_duty_cycle_percent": 10
+      },
+      "asked_for": "Snubber resistor Rs in ohms",
+      "correct_answer": "43.54 Ω",
+      "method_summary": "Worst-case discharge time is ton,min=0.10/6000=16.67 us. Using the ELE336 RC settling rule ton,min=3*2.2*Rs*Cs, Rs=16.67 us/(6.6*58 nF)=43.54 ohm.",
+      "formula_source": [
+        "Circuit reasoning: Cs discharges through Rs during MOSFET on-time",
+        "RC transient rule: settled after about 3 rise/fall intervals",
+        "10%-90% RC rise/fall-time approximation: tr ≈ 2.2 Rs Cs",
+        "PWM timing: ton,min = δmin/fpwm"
       ],
       "date_archived": "2026-05-29",
       "duplicate_check": {
