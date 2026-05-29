@@ -40,6 +40,43 @@
         "repository_search_result": "No matching repository search result for the values/text.",
         "notes": "Archived as a new question. Image was later repaired/replaced with a flattened PNG."
       }
+    },
+    {
+      "id": "buck-closed-loop-feedback-vdc-c2-0p5-r12-4k-r13-3k",
+      "question_title": "Closed-loop buck converter Vdc from C2 voltage and PWM control",
+      "category": "buck converters",
+      "subcategory": "case studies / feedback-control",
+      "key_topic": "Closed-loop buck converter steady-state control calculation",
+      "path": "ta questions/buck converters/case studies/closed-loop-buck-feedback-vdc-c2-0p5v",
+      "description_file": "ta questions/buck converters/case studies/closed-loop-buck-feedback-vdc-c2-0p5v/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps image in separate Word document and uses caption in description.md.",
+      "caption": "Closed-loop buck converter feedback-control case study: the circuit uses a PWM sawtooth comparator, compensator output, and feedback divider to determine the required input voltage Vdc when vC2 = 0.5 V, R12 = 4 kΩ, R13 = 3 kΩ, βVref = 2.5 V, and vsaw = 5 V.",
+      "original_image_filename": "image.png",
+      "question_text_hash_sha256": "4e344037fcdbe4c166f93c0d1cefa884f43418f287e9731ad3fffe32266e54b8",
+      "visible_values": {
+        "R12_kOhm": 4,
+        "R13_kOhm": 3,
+        "beta_Vref_V": 2.5,
+        "vsaw_V": 5,
+        "vC2_V": 0.5
+      },
+      "asked_for": "Input voltage Vdc in volts",
+      "correct_answer": "9.72 V",
+      "method_summary": "Use α=R13/(R12+R13)=3/7, αVo=βVref=2.5 V, so Vo=5.833 V. With vC2=0.5 V, u=3.0 V, δ=u/vsaw=0.6, and Vo=δVdc, giving Vdc=9.72 V.",
+      "formula_source": [
+        "Ideal buck converter relation: Vo = δVdc",
+        "Circuit reasoning: feedback divider α = R13/(R12+R13)",
+        "Closed-loop condition: αVo = βVref",
+        "PWM comparator relation: δ = u/vsaw"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new",
+        "manifest_result": "No matching existing manifest entry.",
+        "repository_search_result": "No matching repository search result for the values/text.",
+        "notes": "Archived as a new question without GitHub image storage."
+      }
     }
   ]
 }
