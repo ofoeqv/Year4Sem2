@@ -175,6 +175,42 @@
         "repository_search_result": "No exact repository match found using key terms and values: buck-boost ripple, 35 V, 27 V, 344 µH, 50 kHz.",
         "notes": "Archived as a new question without GitHub image storage."
       }
+    },
+    {
+      "id": "buck-closed-loop-feedback-vdc-c2-0p5-r12-3k-r13-3k",
+      "question_title": "Closed-loop buck converter Vdc from C2 voltage and PWM control",
+      "category": "buck converters",
+      "subcategory": "case studies / feedback-control / PWM duty calculation",
+      "key_topic": "Finding Vdc from feedback divider, compensation capacitor voltage, PWM comparator and ideal buck relation",
+      "path": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-vdc-c2-0p5v-r12-3k-r13-3k",
+      "description_file": "ta questions/buck-converters/case-studies/closed-loop-buck-feedback-vdc-c2-0p5v-r12-3k-r13-3k/description.md",
+      "image_file": null,
+      "image_storage": "Image not stored in GitHub. User keeps images in a separate Word document and uses caption in description.md.",
+      "caption": "Closed-loop buck converter feedback-control question: with R12 = 3 kΩ, R13 = 3 kΩ, βVref = 2.5 V, vsaw = 5 V, and vC2 = 0.5 V, the feedback divider gives Vo = 5.00 V and the PWM control voltage gives δ = 0.60, so the required input voltage is Vdc = 8.33 V.",
+      "original_image_filename": "image.png",
+      "visible_values": {
+        "R12_kOhm": 3,
+        "R13_kOhm": 3,
+        "beta_Vref_V": 2.5,
+        "vsaw_V": 5,
+        "vC2_V": 0.5
+      },
+      "asked_for": "Input voltage Vdc in volts",
+      "correct_answer": "8.33 V",
+      "method_summary": "Use α = R13/(R12+R13) = 0.5 and αVo = βVref = 2.5 V, so Vo = 5.00 V. The control voltage is u = βVref + vC2 = 3.0 V, giving duty δ = u/vsaw = 0.60. Then ideal buck relation Vo = δVdc gives Vdc = 5.00/0.60 = 8.33 V.",
+      "formula_source": [
+        "Circuit reasoning: feedback divider α = R13/(R12+R13)",
+        "Circuit reasoning: closed-loop steady-state condition αVo = βVref",
+        "Circuit reasoning: PWM duty ratio δ = u/vsaw",
+        "Buck converter relation: Vo = δVdc"
+      ],
+      "date_archived": "2026-05-29",
+      "duplicate_check": {
+        "status": "new_similar_not_duplicate",
+        "manifest_result": "Similar closed-loop buck Vdc from C2 question exists, but it uses R12 = 4 kΩ and R13 = 3 kΩ, giving answer 9.72 V. This question uses R12 = 3 kΩ and R13 = 3 kΩ, so it is not exact duplicate.",
+        "repository_search_result": "No exact repository match found for C2 = 0.5 V, R12 = 3 kΩ, R13 = 3 kΩ, βVref = 2.5 V and vsaw = 5 V.",
+        "notes": "Archived as a new question without GitHub image storage."
+      }
     }
   ]
 }
