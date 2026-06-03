@@ -110,10 +110,11 @@ E. InAs, CdTe, Si
 Feedback: The correct answer is Si, GaAs, CdTe.
 
 ## Question 10
-Which of the following combinations, arranged from the top to the bottom junctions, can be used in a 3-junction tandem solar cell?
+Which of the following combinations, arranged in the correct order from the top to the bottom junctions, can be used in a 3-junction tandem solar cell?
 
 A. In0.49Ga0.51P / GaAs / Ge **[correct]**
+B. Al0.1Ga0.9As / InAs / GaAs
+C. GaAs / Ge / Al0.3Ga0.7As
+D. GaAs / In0.53Ga0.47As / GaP
 
-Feedback: This is the correct top-to-bottom junction order for the 3-junction tandem solar cell question.
-
-Note: The uploaded PDF only clearly preserves the correct option for Q10. The other options are not fully readable in the parsed text.
+Feedback: The correct answer is In0.49Ga0.51P / GaAs / Ge.
