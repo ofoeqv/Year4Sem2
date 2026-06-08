@@ -19,46 +19,51 @@ C. The maximum input signal frequency
 D. The rate at which samples are read into the system
 
 ## Correct Answer
-**C. The maximum input signal frequency**
+**A. Half the sampling frequency**
 
 ## Explanation
-In the course sampling-theorem wording, the input signal is bandlimited with highest nonzero angular frequency \(\omega_N\). This \(\omega_N\) is called the **Nyquist frequency**.
-
-The sampling frequency must satisfy:
+For a digital/sampled system, the **Nyquist frequency** is half the sampling frequency:
 
 \[
-\omega_s \geq 2\omega_N
+f_N = \frac{f_s}{2}
 \]
 
-The value \(2\omega_N\) is the **Nyquist rate**, not the Nyquist frequency.
+It is the highest frequency that can be represented without aliasing for a sampling rate \(f_s\).
+
+Option B, double the maximum input signal frequency, describes the **Nyquist rate** requirement:
+
+\[
+f_s \geq 2f_{max}
+\]
+
+Option C is the maximum input signal frequency, which must be less than or equal to the Nyquist frequency for alias-free sampling.
+
+Option D is the sampling frequency itself, \(f_s\), not the Nyquist frequency.
 
 ## Important note
-Some texts also use “Nyquist frequency” to mean half the sampling frequency, \(f_s/2\). However, for this question and the course wording, the intended answer is **C**, because the Nyquist frequency is the maximum input signal frequency that must be sampled at least twice as fast.
+Some lecture notes define \(\omega_N\), the highest nonzero input frequency component, as the Nyquist frequency, and call \(2\omega_N\) the Nyquist rate. However, in this quiz wording, **in relation to digital systems**, the intended convention is:
 
-## Why the other options are wrong
-A. Half the sampling frequency is a common alternative convention, but not the definition used by the course wording here.
-
-B. Double the maximum input signal frequency is the **Nyquist rate**.
-
-D. The rate at which samples are read into the system is the **sampling frequency**.
+\[
+\text{Nyquist frequency} = \frac{f_s}{2}
+\]
 
 ## Must-know concept
-Nyquist frequency: highest input frequency component, \(f_N\).  
-Nyquist rate: minimum sampling frequency, \(2f_N\).  
-Sampling condition: \(f_s \geq 2f_N\).
+Nyquist frequency: \(f_s/2\).  
+Nyquist rate: minimum sampling rate needed to avoid aliasing, \(2f_{max}\).  
+Aliasing-free condition: \(f_{max} \leq f_s/2\), equivalently \(f_s \geq 2f_{max}\).
 
 ## Duplicate check
-Searched the repository for:
+Duplicate found at this same path and updated rather than creating a new file:
 
-- `Nyquist frequency half sampling frequency maximum input signal frequency Nyquist rate`
-- `Question 11 Nyquist frequency digital systems`
-- `double the maximum input signal frequency rate at which samples are read into the system`
-- Existing path: `Theory/question-11-nyquist-frequency-definition/description.md`
+`Theory/question-11-nyquist-frequency-definition/description.md`
 
-No duplicate was found before archiving.
+Previous archived answer was corrected from **C** to **A** after the updated screenshot showed option A selected.
 
 ## Source
 Original uploaded image filename: `image.png`
 
 ## Date archived
+2026-06-08
+
+## Date corrected
 2026-06-08
